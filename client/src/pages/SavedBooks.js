@@ -7,10 +7,9 @@ import Auth from '../utils/auth';
 import { GET_ME } from '../utils/queries';
 import { SAVE_BOOK } from '../utils/mutations';
 import { removeBookId } from '../utils/localStorage';
-import { useQuery } from '@apollo/react-hooks';
 
 const SavedBooks = () => {
-  const [userData, setUserData] = useState({});
+  // const [userData, setUserData] = useState({});
   const { data: userData } = useQuery(GET_ME);
 
   // use this to determine if `useEffect()` hook needs to run again
